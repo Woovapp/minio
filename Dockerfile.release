@@ -5,8 +5,8 @@ LABEL maintainer="Minio Inc <dev@minio.io>"
 COPY dockerscripts/docker-entrypoint.sh dockerscripts/healthcheck.sh /usr/bin/
 
 ENV MINIO_UPDATE off
-ENV MINIO_ACCESS_KEY_FILE=access_key \
-    MINIO_SECRET_KEY_FILE=secret_key
+ENV MINIO_ACCESS_KEY_FILE=WOOV-CI \
+    MINIO_SECRET_KEY_FILE=WOOVWOOV
 
 RUN \
      apk add --no-cache ca-certificates 'curl>7.61.0' && \
